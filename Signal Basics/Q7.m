@@ -1,0 +1,11 @@
+t=linspace(0,50,51)
+w=randn(1,51);
+x1=cos(0.04*pi*t)+0.01.*w;
+figure
+plot(t,x1)
+x2=cos(0.04*pi*t)+0.2.*w;
+figure
+plot(t,x2)
+x3=cos(0.04*pi*t)+2.*w;
+figure
+plot(t,x3)

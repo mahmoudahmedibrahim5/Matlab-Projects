@@ -1,0 +1,25 @@
+t=linspace(0,100/5000,100);
+x1=sin(2*pi*500*t);
+x2=sin(2*pi*2000*t);
+x3=sin(2*pi*3000*t);
+x4=sin(2*pi*4500*t);
+figure
+subplot(2,2,1)
+plot(t,x1)
+subplot(2,2,2)
+plot(t,x2)
+subplot(2,2,3)
+plot(t,x3)
+subplot(2,2,4)
+plot(t,x4)
+t2=linspace(0,100/50000,100);
+x5=sin(2*pi*2000*t2);
+figure
+plot(t2,x5)
+y=zeros(1,50);
+for i=2:2:100
+    y(i/2)=x5(i);
+end
+t3=linspace(0,100/50000,50);
+figure
+plot(t3,y)

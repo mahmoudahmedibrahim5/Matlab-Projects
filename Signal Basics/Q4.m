@@ -1,0 +1,14 @@
+t=linspace(-40,40,40);
+x=cos(2*t/3);
+y=cos(8*pi*t/38);
+figure
+stem(t,x)
+figure
+stem(t,y)
+tnew=linspace(-40,40,8000);
+xnew=cos(2*tnew/3);
+ynew=cos(8*pi*tnew/38);
+figure
+plot(tnew,xnew)
+figure
+plot(tnew,ynew)

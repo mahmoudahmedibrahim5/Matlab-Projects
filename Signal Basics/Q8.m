@@ -1,0 +1,11 @@
+t=linspace(-10,10,21);
+x=exp((-0.1+j*0.3)*t);
+mag=abs(x);
+phase=angle(x);
+r=real(x);
+i=imag(x);
+figure; 
+subplot(2,2,1); plot(t,r);
+subplot(2,2,2); plot(t,i);
+subplot(2,2,3); plot(t,mag); 
+subplot(2,2,4); plot(t,phase);
